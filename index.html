@@ -126,7 +126,17 @@ I am actively searching for internships and other work opportunities to learn an
     <!--/ Bio Section -->
 	
 	<!-- Skills section -->
-    <section id="skills" class="skills-section" style>
+    <section id="skills" class="skills-section">
+      <style>
+        table, th, td {  
+                text-align:center; 
+            } 
+            th, td { 
+                padding: 20px; 
+                background-color:none; 
+            } 
+              
+      </style>
       <div class="container">
         <div class="row">
         <div class="col-lg-2"></div>
@@ -139,9 +149,9 @@ I am actively searching for internships and other work opportunities to learn an
 				<td align = "center"><img src="assets/css/ros.png" width="150" height="50" alt="Italiatn Trulli"></th>
 			  </tr>
 			  <tr>
-				<td align = "center">Python</td>
-				<td align = "center">Java</td>
-				<td align = "center">ROS</td>
+				<td align = "center"><h1>Python</h1></td>
+				<td align = "center"><h1>Java</h1></td>
+				<td align = "center"><h1>ROS</h1></td>
 			  </tr>
 			  <tr>
 				<td align = "center">Intermediate</td>
@@ -153,9 +163,9 @@ I am actively searching for internships and other work opportunities to learn an
 				<td align = "center"><img src="assets/css/photoshop.png" width="150" height="150" alt="Italiatn Trulli"></th>
 			  </tr>
 			  <tr>
-				<td align = "center">Scheme</td>
-				<td align = "center">C++</td>
-				<td align = "center">Photoshop</td>
+				<td align = "center"><h1>Scheme</h1></td>
+				<td align = "center"><h1>C++</h1></td>
+				<td align = "center"><h1>Photoshop</h1></td>
 			  </tr>
 			  <tr>
 				<td align = "center">Intermediate</td>
@@ -166,8 +176,8 @@ I am actively searching for internships and other work opportunities to learn an
 				<td align = "center"><img src="assets/css/speaker.png" width="150" height="150" alt="Italiatn Trulli"></th>
 			  </tr>
 			  <tr>
-				<td align = "center">Web Development</td>
-				<td align = "center">Live Audio</td>
+				<td align = "center"><h1>Web Development</h1></td>
+				<td align = "center"><h1>Live Audio</h1></td>
 			  </tr>
 			  <tr>
 				<td align = "center">Beginner</td>
@@ -216,26 +226,27 @@ I am actively searching for internships and other work opportunities to learn an
 
   <div class="events-content">
     <ol>
-      <li class="selected" data-date="20/04/2014">
-        <h1>Internship at MicroBilt</h1>
-        <em>Application Development Intern (September 2016 - October 2017)</em>
-        <p>Responsibilities included coding in Java for various projects. My main project was creating a Java application to detect errors in data and formatting of documents sent to MicroBilt by clients.  </p>
-      </li>
+      <li class="selected" data-date="16/01/2014">
+        <h1>University Information Technology Services (UITS)</h1>
+        <em>January 2019 - Present</em>
+        <p> Responsibilities include on site troubleshooting various University owned devices, installation of new devices, and configuring new devices to the UConn network.
+        </p>
+        </li>
 
       <li data-date="28/02/2014">
         <h1>Waypoint Robotics Internship</h1>
         <em>Robotics Developer Intern (Summer 2018, Summer 2019)</em>
         <p> Last summer, my responsibilities included the development of new robot functions. My three projects included creating scheduling capabilities for the robot, developing a torque-based safety feature, and laying the foundation for GPS integration in the robots. I primarily utilized ROS and Python for these projects. 
         </p> 
+        <p> <br></p>
 		<p>In summer 2018, my responsibilities included the development of robot functions and web interface. I made various additions to Waypoint’s web interface’s block code section, where clients can create custom programs using Waypoint’s block coding language. My main project was creating a raster function.   
 		</p>
       </li>
 
-      <li data-date="16/01/2014">
-        <h1>University Information Technology Services (UITS)</h1>
-        <em>January 2019 - Present</em>
-        <p> Responsibilities include on site troubleshooting various University owned devices, installation of new devices, and configuring new devices to the UConn network.
-        </p>
+      <li data-date="20/04/2014">
+        <h1>Internship at MicroBilt</h1>
+        <em>Application Development Intern (September 2016 - October 2017)</em>
+        <p>Responsibilities included coding in Java for various projects. My main project was creating a Java application to detect errors in data and formatting of documents sent to MicroBilt by clients.  </p>
       </li>
 
     </ol>
@@ -248,9 +259,18 @@ I am actively searching for internships and other work opportunities to learn an
     <section id="extra" class="extra-section">
 	
     <h1 class="extra-head">Extra-Curricular Activities</h1>
-    <p> <br></p>
-    <p align = "center"><img src="assets/images/isa.png" width="150" height="150" alt="Italiatn Trulli"><h1 align="center">Indian Students Association</h1></p>
-
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Indian Students Association')">Indian Students Association</button>
+      <button class="tablinks" onclick="openCity(event, 'MetroHacks')">MetroHacks</button>
+      <button class="tablinks" onclick="openCity(event, 'Sanskrit')">Sanskrit</button>
+      <button class="tablinks" onclick="openCity(event, 'Robotics Club')">Robotics Club</button>
+      <button class="tablinks" onclick="openCity(event, 'Fencing')">Fencing</button>
+      <button class="tablinks" onclick="openCity(event, 'Music')">Music</button>
+    </div>
+    
+    <div id="Indian Students Association" class="tabcontent" style="display:block"> 
+      <p> <br></p>
+      <p align = "center"><img src="assets/images/isa.png" width="150" height="150" alt="Italiatn Trulli"><h1 align="center">Indian Students Association</h1></p>
     <div class = "indent">
       <p class = "i" style="color:black;"> Media Chair (May 2019-Present)</p>
       </div>
@@ -266,27 +286,33 @@ I am actively searching for internships and other work opportunities to learn an
         <p>- Responsible for assisting in organizing events and supporting the media chair in publicizing events and in running audio video components of events.  </p>
         <p>- Also responsible for representing the organization in in UConn’s Pan Asian Council.</p>
         </div>
-
-    <p align = "center"><img src="assets/images/metrohacks.png" width="145" height="166" alt="Italiatn Trulli"><h1 align="center">MetroHacks</h1></p>
-    <div class = "indent">
-    <p class = "i" style="color:black;"> Board Member (January 2019 – Present)</p>
     </div>
-    <div align = "center" style="color:navy;">
-    <p>This past year I worked to support the planning and execution of MetroHacks Women II and MetroHacks IV. I worked to scale MetroHacks to four new locations including 
-      New York City, Atlanta, Washington DC, and Hartford. This expansion allowed Metrohacks to impact over 1,000 additional students. My responsibilities included remotely 
-      managing and advising local teams on financial, marketing, and branding/design initiatives for each event.</p>
-    </div>
-
-    <div class = "indent">
-      <p class = "i" style="color:black;">Director of Design & Sponsorship (Fall 2017 – August 2018)</p>
+    
+    <div id="MetroHacks" class="tabcontent">
+      <p> <br></p>
+      <p align = "center"><img src="assets/images/metrohacks.png" width="145" height="166" alt="Italiatn Trulli"><h1 align="center">MetroHacks</h1></p>
+      <div class = "indent">
+      <p class = "i" style="color:black;"> Board Member (January 2019 – Present)</p>
       </div>
       <div align = "center" style="color:navy;">
-      <p>MetroHacks hosts the largest annual high school hackathon in New England. I was responsible for pursuing sponsorships from companies to support the organization and its 
-        events. I also created branding materials for the organization and its events, such as T-shirt designs, graphics for social media, logos, etc.</p>
-      <p> <br></p>
+      <p>This past year I worked to support the planning and execution of MetroHacks Women II and MetroHacks IV. I worked to scale MetroHacks to four new locations including 
+        New York City, Atlanta, Washington DC, and Hartford. This expansion allowed Metrohacks to impact over 1,000 additional students. My responsibilities included remotely 
+        managing and advising local teams on financial, marketing, and branding/design initiatives for each event.</p>
       </div>
-
-
+  
+      <div class = "indent">
+        <p class = "i" style="color:black;">Director of Design & Sponsorship (Fall 2017 – August 2018)</p>
+        </div>
+        <div align = "center" style="color:navy;">
+        <p>MetroHacks hosts the largest annual high school hackathon in New England. I was responsible for pursuing sponsorships from companies to support the organization and its 
+          events. I also created branding materials for the organization and its events, such as T-shirt designs, graphics for social media, logos, etc.</p>
+        <p> <br></p>
+        </div>
+  
+    </div>
+    
+    <div id="Sanskrit" class="tabcontent">
+      <p> <br></p>
       <p align = "center"><img src="assets/images/sanskrit.png" width="151" height="100" alt="Italiatn Trulli"><h1 align="center">Sanskrit Instructor at Chinmaya Mission</h1></p>
       <div class = "indent">
       <p class = "i" style="color:black;"> Instructor (September 2016 – May 2018)</p>
@@ -296,8 +322,12 @@ I am actively searching for internships and other work opportunities to learn an
       </div>
         <p> <br></p>
         </div>
+      
+    </div>
 
-        <p align = "center"><img src="assets/images/botball.png" width="150" height="150" alt="Italiatn Trulli"><h1 align="center">AMSA High School Botball Robotics Club</h1></p>
+    <div id="Robotics Club" class="tabcontent">
+      <p> <br></p>
+      <p align = "center"><img src="assets/images/botball.png" width="150" height="150" alt="Italiatn Trulli"><h1 align="center">AMSA High School Botball Robotics Club</h1></p>
         <div class = "indent">
         <p class = "i" style="color:black;">Team Lead (Fall 2016 - May 2018)</p>
         </div>
@@ -308,21 +338,29 @@ I am actively searching for internships and other work opportunities to learn an
         <p> <br></p>
         </div>
 
-        <p align = "center"><img src="assets/images/fencing.png" width="450" height="300" alt="Italiatn Trulli"><h1 align="center">Captain of AMSA Fencing Team</h1></p>
+    </div>
+    
+    <div id="Fencing" class="tabcontent">
+      <p> <br></p>
+      <p align = "center"><img src="assets/images/fencing.png" width="450" height="300" alt="Italiatn Trulli"><h1 align="center">Captain of AMSA Fencing Team</h1></p>
         <div class = "indent">
         <p class = "i" style="color:black;">Captain (Fall 2015 - May 2018)</p>
         </div>
         <p> <br></p>
         </div>
-
-        <p align = "center"><img src="assets/images/music.png" width="151" height="100" alt="Italiatn Trulli"><h1 align="center">Carnatic (Indian Classical) Vocal Music</h1></p>
+     
+    </div>
+    
+    <div id="Music" class="tabcontent">
+      <p> <br></p>
+      <p align = "center"><img src="assets/images/music.png" width="151" height="100" alt="Italiatn Trulli"><h1 align="center">Carnatic (Indian Classical) Vocal Music</h1></p>
         <div class = "indent">
-        <p class = "i" style="color:black;">2008- Present</p>
+        <p class = "i" style="color:black;">2008 - Present</p>
         </div>
         <p> <br></p>
+       
         </div>
-
-
+    </div>
 
     </section>
 	
@@ -355,12 +393,12 @@ I am actively searching for internships and other work opportunities to learn an
         <div class="slideshow-container">
 
           <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
-            <img src="assets/images/portfolio/1.png" height=100% width=100% >
+          <div class="mySlides fade" style="display:block">  
+            <img src="assets/images/portfolio/1.png" height=50% width=50% >
           </div>
         
           <div class="mySlides fade">
-            <img src="assets/images/portfolio/2.png" height=100% width=100%>
+            <img src="assets/images/portfolio/2.png" height=50% width=50%>
           </div>
         
           <div class="mySlides fade" align = "center">
@@ -489,7 +527,7 @@ I am actively searching for internships and other work opportunities to learn an
             <h1 class="random-head">Fun Facts</h1>
               <p>I think I'm the closest thing to an expert on Patrick Star Art, here are a few of my beautiful creations</p>
               <p><img src="assets/images/patrick1.jpg" height=50% width=50%>  <img src="assets/images/patrick2.jpg" height=50% width=50%></p>
-              <p>Yeah aside from the patricks, I'm pretty boring</p>
+              <p>"They say if you don't know if you're qualified enough, at least make yourself interesting" ~ Me</p>
   
             </div>
             <div class="col-lg-2"></div>
@@ -503,7 +541,9 @@ I am actively searching for internships and other work opportunities to learn an
     <section id="contact" class="contact-section">
       <h1 class="contact-head">Contact Me!</h1>
       <div class="container">
+        <a href="https://www.linkedin.com/in/sushant-raj-86454319b/" style = "color: white;"> <img src="assets/images/linkedin-logo.png" height=10% width=10%></p></a>
         <a href="mailto:sushant.raj@uconn.edu" style = "color: navy;"> <h1>Email</h1></a>
+        
 
        </div>
     </section>
@@ -528,6 +568,7 @@ I am actively searching for internships and other work opportunities to learn an
     <!-- Timeline JS -->
     <script type="text/javascript" src="assets/js/timeline.js"></script>
     <script type="text/javascript" src="assets/js/slideshow.js"></script>
+    <script type="text/javascript" src="assets/js/tab.js"></script>
 
   </body>
 </html>

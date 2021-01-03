@@ -1,5 +1,5 @@
 div.indent {
-  text-indent: 50px;
+  text-indent: 100px;
 }
 
 div.indent2 {
@@ -30,6 +30,13 @@ p.oblique {
   font-style: oblique;
 } 
 
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+video{
+  margin: 0 auto;
+}
 
 body {
   font-size: 1.8rem;
@@ -62,30 +69,18 @@ a {
 	background-image: url("IMG_8667.jpg");
 	background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
-    background-position: center center;              /* optional, center the image */
+    background-position: center;              /* optional, center the image */
 	background-color:  rgb(58, 188, 246);
-	color: #fff;
-	text-align: center;
-    
-
-
-}
-.intro-section > a {
-	font-size: 45px;
-}
-
-.skills-head {
-	background-color:  #3ABCED;
-	color: #fff;
-	margin-bottom: 10px;
-	margin-top: 20px;
-	text-align: center;
+	color: black;
+  font-family: 'Lato', sans-serif !important;
+  font-size: 45px;
+  text-align: right;
+  background-attachment: fixed;
+  text-shadow: 2px 2px #ffffff;
+  
 }
 
-.skills-section {
-	background-color:  #3ABCED;            /* optional, center the image */
-	color: #fff;
-}
+
   
 
   .contact-head {
@@ -108,32 +103,18 @@ a {
 	
 	
 }
-.resume-head {
-	background-color:  #fff;
-	margin-bottom: 10px;
-	margin-top: 20px;
-	text-align: center;
+
+.skills-category{
+  font-size: 30px;
+  font-family: 'Lato', sans-serif !important;
+  text-decoration: underline;
 }
 
 
-.extra-head {
-	background-color:  #3ABCED;
-	color: #fff
-	margin-bottom: 10px;
-	margin-top: 20px;
-	text-align: center;
-}
-
-.extra-section {
-	background-color:  #3ABCED;            /* optional, center the image */
-	color: #fff;
-	/* The actual timeline (the vertical ruler) */
-
-}
 
 .portfolio-head {
 	background-color:  #3ABCED;
-	color: #fff
+	color: #fff;
 	margin-bottom: 10px;
 	margin-top: 20px;
 	text-align: center;
@@ -540,18 +521,57 @@ a {
 }
 
 
-
-.bio-section p {
-	text-align: center;
-	font-size: 20px;
-	font-weight: 300;
-	font-style: ;
+table, tr, td{
+  text-align: center;
+  padding-bottom: 50px;
 }
 
-.bio-head, .skills-head {
+.table-img{
+  text-align: left;
+  width: 40%
+}
+
+.table-txt{
+  text-align: left;
+  width: 100%;
+  
+}
+
+.table-title{
+  font-size: 22px;
+  font-family: 'Lato', sans-serif !important;
+  
+}
+
+.table-details{
+  font-size: 14px;
+}
+
+.bio-head, .skills-head, .resume-head, .extra-head, .skills-head{
 	text-align: center;
 	margin-top: 35px;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+
+
+.bio-section, .extra-section{
+  text-align: center;
+}
+
+.resume-section, .skills-section{
+  text-align: center;
+  background-color:  #10172b;
+  color: white;
 }
 
 .achievements-head {

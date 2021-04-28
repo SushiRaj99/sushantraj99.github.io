@@ -66,7 +66,7 @@ a {
 }
 
 .intro-section {
-	background-image: url("profile_pic.jpeg");
+	background-image: url("profile_pic.png");
 	background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center;              /* optional, center the image */
@@ -74,10 +74,14 @@ a {
 	color: black;
   font-family: 'Lato', sans-serif !important;
   font-size: 45px;
-  text-align: right;
+  text-align: left;
   background-attachment: fixed;
   text-shadow: 2px 2px #ffffff;
   
+}
+
+.description{
+  margin-left: 5%
 }
 
 
